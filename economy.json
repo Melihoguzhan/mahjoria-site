@@ -11,10 +11,11 @@
   "star_majold": 2,
   "shuffle_every_m2": 1000,
   "adventure": {
-    "star3": 1.8,
-    "star2": 3.0,
-    "base": 0.4,
-    "per_star": 0.2
+    "star3": 1.5,
+    "star2": 2.6,
+    "base": 0.25,
+    "per_star": 0.15
   },
-  "ref_tiles": 100
+  "ref_tiles": 100,
+  "version": null
 }
