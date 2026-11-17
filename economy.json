@@ -1,14 +1,20 @@
 {
-  "v": 1,
-  "note": "Mahjoria ekonomi ayarı (Ekonomi Planı v1, 17 Kasım 2026). Oyun açılışta okur; değerler oyunda makul aralığa kırpılır.",
+  "v": 2,
+  "note": "Mahjoria ekonomi ayarı (v2, 17 Kasım 2026): parsel ödülü taş sayısına bağlı; parcel_majold = ref_tiles taşlı parselin 2 yıldızlı ödülü. Oyun açılışta okur; değerler makul aralığa kırpılır.",
   "hint_cost": 25,
   "shuffle_cost": 50,
   "ad_reward": 25,
   "ad_daily": 5,
   "free_shuffles": 2,
   "regen_min": 30,
-  "parcel_majold": 5,
+  "parcel_majold": 9,
   "star_majold": 2,
   "shuffle_every_m2": 1000,
-  "adventure": {"star3": 1.8, "star2": 3.0, "base": 0.4, "per_star": 0.2}
+  "adventure": {
+    "star3": 1.8,
+    "star2": 3.0,
+    "base": 0.4,
+    "per_star": 0.2
+  },
+  "ref_tiles": 100
 }
