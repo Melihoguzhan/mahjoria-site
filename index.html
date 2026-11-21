@@ -247,6 +247,13 @@ footer {
 }
 footer nav { display: flex; gap: 22px; flex-wrap: wrap; }
 footer a { color: var(--ink-soft); }
+.fstores { display: flex; gap: 12px; align-items: center; }
+.fstores img { height: 40px; width: auto; display: block; }
+.social { display: flex; gap: 14px; }
+.social a { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; border: 1px solid rgba(243,207,154,.35); color: var(--ivory); }
+.social a:hover { background: rgba(243,207,154,.12); }
+.social svg { width: 22px; height: 22px; }
+
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
@@ -331,6 +338,15 @@ footer a { color: var(--ink-soft); }
 
 <footer>
   <span>© 2026 Swiff Studio</span>
+  <div class="fstores">
+    <a class="store" href="https://apps.apple.com/app/id6835578696" target="_blank" rel="noopener"><img src="a/appstore.svg" alt="Download on the App Store"></a>
+    <a class="store" href="https://play.google.com/store/apps/details?id=com.swiffstudio.mahjoria" target="_blank" rel="noopener"><img class="gp" src="a/gp-en.svg" alt="Get it on Google Play"></a>
+  </div>
+  <div class="social">
+    <a href="https://www.instagram.com/mahjoriagame/" target="_blank" rel="noopener" aria-label="Mahjoria on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1C2.6 9.9 2.6 10.3 2.6 12s0 2.1.1 3.3c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4C15.5 4 15.1 4 12 4zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8a3.1 3.1 0 1 0 0-6.2 3.1 3.1 0 0 0 0 6.2zm6.2-8.2a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0z"/></svg></a>
+    <a href="https://www.facebook.com/profile.php?id=61596597969361" target="_blank" rel="noopener" aria-label="Mahjoria on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg></a>
+    <a href="https://youtu.be/EBXmFjA2jK4" target="_blank" rel="noopener" aria-label="Mahjoria trailer on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></a>
+  </div>
   <nav>
     <a href="privacy.html" data-keep="privacy.html" data-i="privL">Privacy</a>
     <a href="terms.html" data-keep="terms.html" data-i="termsL">Terms of use</a>
@@ -378,7 +394,7 @@ function setLang(l) {
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
   document.querySelectorAll("[data-i]").forEach(el => { const v = tt[el.dataset.i]; if (v) { if ("rich" in el.dataset) el.innerHTML = rich(v); else el.textContent = v; } });
   sel.value = lang;
-  const gp = document.querySelector(".gp"); if (gp) gp.src = "a/gp-" + (GP.includes(lang) ? lang : "en") + ".svg";
+  document.querySelectorAll(".gp").forEach(function(gp){ gp.src = "a/gp-" + (GP.includes(lang) ? lang : "en") + ".svg"; });
   document.querySelectorAll("a[data-keep]").forEach(a => a.href = a.dataset.keep + "?lang=" + lang);
   try { localStorage.setItem("mj-lang", lang); } catch (e) {}
 }
