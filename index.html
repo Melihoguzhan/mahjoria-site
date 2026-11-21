@@ -193,7 +193,16 @@ a.store:hover img { transform: translateY(-1px); }
   border-radius: 34px; padding: 10px; background: #0a1a12;
   box-shadow: 0 0 0 2px rgba(243,207,154,.4), 0 30px 60px rgba(0,0,0,.5);
 }
-.phone img { border-radius: 26px; }
+.phone { position: relative; }
+.phone img, .phone video { display: block; width: 100%; aspect-ratio: 9 / 16; border-radius: 26px; background: #050d09; object-fit: cover; }
+.snd {
+  position: absolute; right: 20px; bottom: 20px; width: 44px; height: 44px; border-radius: 50%;
+  border: 1px solid rgba(243,207,154,.6); background: rgba(6,21,15,.78); color: var(--ivory);
+  display: grid; place-items: center; cursor: pointer; padding: 0;
+}
+.snd svg { width: 22px; height: 22px; }
+.snd .on { display: none; } .snd[aria-pressed="true"] .on { display: inline; } .snd[aria-pressed="true"] .off { display: none; }
+.snd:focus-visible { outline: 2px solid var(--ivory); outline-offset: 3px; }
 .levels { list-style: none; margin: 0; padding: 0; display: grid; gap: 26px; }
 .levels li { display: grid; grid-template-columns: 92px 1fr; gap: 16px; align-items: start; }
 .alt {
@@ -281,7 +290,7 @@ footer a { color: var(--ink-soft); }
         <li><div class="alt">3 km</div><div><h3 data-i="l2h">The landscape</h3><p data-i="l2p">Stack heights follow the land beneath, so you can guess where hills and lakes will appear.</p></div></li>
         <li><div class="alt">0 m</div><div><h3 data-i="l3h">Your parcel</h3><p data-i="l3p">Big, clear tiles sized for a phone screen. Finish one and the ground rises, sometimes with a discovery.</p></div></li>
       </ol>
-      <div class="phone"><img src="a/game.webp" alt="Mahjoria gameplay on a phone: a parcel of mahjong tiles above a forest"></div>
+      <div class="phone"><video id="film" src="a/film.mp4" poster="a/film-poster.webp" muted loop playsinline autoplay preload="metadata" aria-label="Mahjoria gameplay trailer"></video><button class="snd" id="snd" type="button" aria-label="Sound on" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="off" d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="on" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></button></div>
     </div>
   </section>
 
@@ -440,6 +449,20 @@ const io = new IntersectionObserver(es => es.forEach(e => {
   if (e.isIntersecting) marks.forEach(m => m.classList.toggle("on", m.dataset.for === e.target.id));
 }), { threshold: 0.45 });
 ["orbit", "surface", "world", "majold"].forEach(id => io.observe(document.getElementById(id)));
+</script>
+<script>
+(function(){
+  var v=document.getElementById('film'), b=document.getElementById('snd'); if(!v||!b) return;
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(es){ es.forEach(function(e){ if (v.controls) return; if (e.isIntersecting) { var p=v.play(); if (p&&p.catch) p.catch(function(){}); } else v.pause(); }); }, {threshold: .25}).observe(v);
+  }
+  b.addEventListener('click', function(){
+    var on = v.muted; v.muted = !on; b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    b.setAttribute('aria-label', on ? 'Sound off' : 'Sound on');
+    if (on) { v.currentTime = 0; var p=v.play(); if (p&&p.catch) p.catch(function(){}); }
+  });
+})();
 </script>
 </body>
 </html>
