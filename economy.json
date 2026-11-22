@@ -18,8 +18,6 @@
   },
   "ref_tiles": 100,
   "version": null,
-  "gifts_raw": "[{\"id\":\"g20261122a\",\"code\":\"MJ-5QUY-T83J\",\"majold\":500,\"hints\":0,\"shuffles\":0}]",
-  "gifts_sig": "nkZ+6AfNgYFwX5zhnZeRUCkGBAcKyZa1T/6QSgKNgcN6RM6gSUaOSFpJhwtMK9LNS6jiqlSG8xNNp6L45OS6Fy7OhCqwnqpnoVhkss97bqKVJsa0J7vqphYmi1R67FdrLibfFhw/mHRWx/oKKvsmYN36e+Fl5d6kGkX7FtRxiN/KCdHoAnSrlnvzi45LWgRbvQFJ9Zelucx9gRoFfO9xaD3KwRCJVM2ZKngxPblOc7i9sur5990mIN1Q+Av02OqYxYzLF15G3n8rtIddzIpCijTbmDfOmqeu8qEpsfKysM9set65lmBdIui7IA8Yf+K/fIqhzbXDKCgtp9QazPu5bQ==",
   "gifts": [
     {
       "id": "g20261122a",
@@ -28,5 +26,7 @@
       "hints": 0,
       "shuffles": 0
     }
-  ]
+  ],
+  "signed": "{\"v\":2,\"note\":\"Mahjoria ekonomi ayarı (v2, 17 Kasım 2026): parsel ödülü taş sayısına bağlı; parcel_majold = ref_tiles taşlı parselin 2 yıldızlı ödülü. Oyun açılışta okur; değerler makul aralığa kırpılır.\",\"hint_cost\":25,\"shuffle_cost\":50,\"ad_reward\":25,\"ad_daily\":5,\"free_shuffles\":2,\"regen_min\":30,\"parcel_majold\":9,\"star_majold\":2,\"shuffle_every_m2\":1000,\"adventure\":{\"star3\":1.5,\"star2\":2.6,\"base\":0.25,\"per_star\":0.15},\"ref_tiles\":100,\"version\":null,\"gifts\":[{\"id\":\"g20261122a\",\"code\":\"MJ-5QUY-T83J\",\"majold\":500,\"hints\":0,\"shuffles\":0}]}",
+  "sig": "cR6wrx/Dvv7DebYn9N1G+Cx8o0vDu6NJGnXLk5v6meybgyswVnzknrlxpSRNKi0hxUa9rsg0QgpqvV5l2P5l2aPIJcyvLSvKOCSH0poNfXxTC+wFqpcceuSGI3QtWoJnSLLVX0D0k9eZLzTKPIM7aMbT4GnR+5MT77Gd88IH7nYH4H7ibOkzjNk9X95j1fyenNHG/0qzVXjMK4msO3i3L4wRxDiBESXH3oy1J0Ktf7/N6rOV0KGnrf8Vhyw5yUqtoD0wP5z+vGMKIwhVmo2ivSqK6ofHVzpvPxKhTs8I1p2ZCTgBNOJfMRJjx0oqgzS3nETsvX5e8shXyhVAzFD+Sw=="
 }
