@@ -17,5 +17,16 @@
     "per_star": 0.15
   },
   "ref_tiles": 100,
-  "version": null
+  "version": null,
+  "gifts_raw": "[{\"id\":\"g20261122a\",\"code\":\"MJ-5QUY-T83J\",\"majold\":500,\"hints\":0,\"shuffles\":0,\"msg\":\"Selamlar Melih, seni seviyoruz! Mahjoria ekibi\"}]",
+  "gifts_sig": "A7Z1yDEGkcMsIfbmEnu6DOKHrd4+LonzWwQ5eblcXOO4ptabjrM+nw1y2GOOPwGZU01Z4mUFnGl7triYwgQdHr/9lLFEX/YS3K0+dqWcm2eL2IbVdUeYkEWfb3WES0nF1tHKzR6IIyjY0Ol2y6Vt06bgstvTZ7cmHSfFkDB1knkhyTUjqDDjM0k9Xw77ZBCcwhrp3JlAJo4zISlm8Yhxih+ojQZ4hKNeLC8NFr+GKTPXUVxCD9EJuyiFjW32a+Rh5Rvm0RmeH0LZDXJ+Wx6s/V09h2fD52siQWxcvknpPquj82eF4/z2e5NIZSBFUU9lAAFxFYNKx1Qa8wtcp4JVOw==",
+  "gifts": [
+    {
+      "id": "g20261122a",
+      "code": "MJ-5QUY-T83J",
+      "majold": 500,
+      "hints": 0,
+      "shuffles": 0
+    }
+  ]
 }
