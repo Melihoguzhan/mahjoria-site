@@ -25,8 +25,15 @@
       "majold": 500,
       "hints": 0,
       "shuffles": 0
+    },
+    {
+      "id": "g20261122b",
+      "code": "MJ-RYC3-TA5H",
+      "majold": 500,
+      "hints": 0,
+      "shuffles": 0
     }
   ],
-  "signed": "{\"v\":2,\"note\":\"Mahjoria ekonomi ayarı (v2, 17 Kasım 2026): parsel ödülü taş sayısına bağlı; parcel_majold = ref_tiles taşlı parselin 2 yıldızlı ödülü. Oyun açılışta okur; değerler makul aralığa kırpılır.\",\"hint_cost\":25,\"shuffle_cost\":50,\"ad_reward\":25,\"ad_daily\":5,\"free_shuffles\":2,\"regen_min\":30,\"parcel_majold\":9,\"star_majold\":2,\"shuffle_every_m2\":1000,\"adventure\":{\"star3\":1.5,\"star2\":2.6,\"base\":0.25,\"per_star\":0.15},\"ref_tiles\":100,\"version\":null,\"gifts\":[{\"id\":\"g20261122a\",\"code\":\"MJ-5QUY-T83J\",\"majold\":500,\"hints\":0,\"shuffles\":0}]}",
-  "sig": "cR6wrx/Dvv7DebYn9N1G+Cx8o0vDu6NJGnXLk5v6meybgyswVnzknrlxpSRNKi0hxUa9rsg0QgpqvV5l2P5l2aPIJcyvLSvKOCSH0poNfXxTC+wFqpcceuSGI3QtWoJnSLLVX0D0k9eZLzTKPIM7aMbT4GnR+5MT77Gd88IH7nYH4H7ibOkzjNk9X95j1fyenNHG/0qzVXjMK4msO3i3L4wRxDiBESXH3oy1J0Ktf7/N6rOV0KGnrf8Vhyw5yUqtoD0wP5z+vGMKIwhVmo2ivSqK6ofHVzpvPxKhTs8I1p2ZCTgBNOJfMRJjx0oqgzS3nETsvX5e8shXyhVAzFD+Sw=="
+  "signed": "{\"v\":2,\"note\":\"Mahjoria ekonomi ayarı (v2, 17 Kasım 2026): parsel ödülü taş sayısına bağlı; parcel_majold = ref_tiles taşlı parselin 2 yıldızlı ödülü. Oyun açılışta okur; değerler makul aralığa kırpılır.\",\"hint_cost\":25,\"shuffle_cost\":50,\"ad_reward\":25,\"ad_daily\":5,\"free_shuffles\":2,\"regen_min\":30,\"parcel_majold\":9,\"star_majold\":2,\"shuffle_every_m2\":1000,\"adventure\":{\"star3\":1.5,\"star2\":2.6,\"base\":0.25,\"per_star\":0.15},\"ref_tiles\":100,\"version\":null,\"gifts\":[{\"id\":\"g20261122a\",\"code\":\"MJ-5QUY-T83J\",\"majold\":500,\"hints\":0,\"shuffles\":0},{\"id\":\"g20261122b\",\"code\":\"MJ-RYC3-TA5H\",\"majold\":500,\"hints\":0,\"shuffles\":0}]}",
+  "sig": "S4UcqZ5p9f8XKfWnHI1Ks/UTVeuUMfhonVh2H8wZoTLiQowlq/1B2OAML96Mcz7k0+1qlWloiaS8BPJ1DWpZua3P9DToURIiD3mIs79LObGAaVJUm5MhFZwS66D6P9P4J/cwJMpNyQgnLWTt7OyvcbNy/DFrpzF4nzs+p1Twhmte+JHNuABjaJIX5aC+OwEld2N4cSjAKhRWYAVwdTVptQLLBM7YLxBQZ5pQAjDsnTjtmd5ivjqWF1gRajBylWEBkJT1Vn/wf8N4uRg0uAzIP3Owmr1vnKbzhevnkz6RUXRukFskF6vJDb5XIRrX/fDC8obKR0jsqQBeGLtEdW3Yjw=="
 }
